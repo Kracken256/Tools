@@ -117,10 +117,9 @@ int main(int argc, char *argv[])
     else if (command == "info" || command == "i")
     {
         net_info();
-        println(exec("netstat -nutl"));
         println("");
         println("Host info");
-        println(exec("cat /etc/hosts"));
+        host_info();
     }
     else if (command == "all" || command == "a")
     {
